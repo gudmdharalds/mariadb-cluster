@@ -5,10 +5,10 @@ Dockerfile for MariaDB-cluster running on CentOS 7.1
 * Uses CentOS 7.1 as base
 * Dockerizes MariaDB, ready to be launched as primary node or joining node in a cluster
 * Scripts to initialize new nodes, start and stop nodes
-* Assumes data is stored in `/home/docker/docker-containers-data/mariadb-cluster-1`
+* Assumes data is stored in `~docker/docker-containers-data/mariadb-cluster-1` on Docker-host
 * Allows multiple instances of MariaDB to run (numbered 1, 2, 3, etc.)
-* MariaDB will be accessible from the local machine (`127.0.0.1:3306`)
-* MariaDB root-password will be available in `~docker/mariadb-cluster-shared-1`
+* MariaDB will be accessible from the Docker-host (`127.0.0.1:3306`)
+* MariaDB root-password will be available in `~docker/mariadb-cluster-shared-1` on Docker-host
 
 Note that these Dockerfiles are not meant to be bullet-proof, nor to be used in high-availability environments. Rather, they are intended for those who would like to build something more with MariaDB, and like to use CentOS.
 
