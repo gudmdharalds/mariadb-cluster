@@ -1,0 +1,8 @@
+# MariaDB 10.1 CentOS repository list - created 2015-10-13 19:43 UTC
+# http://mariadb.org/mariadb/repositories/
+[mariadb]
+name = MariaDB
+baseurl = http://yum.mariadb.org/10.1/centos7-amd64
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-MariaDB
+gpgcheck=1
+
