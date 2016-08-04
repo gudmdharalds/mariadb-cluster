@@ -52,7 +52,7 @@ fi
 (echo -e "\ny\n$PASS\n$PASS\ny\ny\ny\ny" | /usr/bin/mysql_secure_installation) || sysexit "Could not secure installation"
 
 # Other nodes need to be able to access the cluster.
-echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'172%' IDENTIFIED BY '$PASS' WITH GRANT OPTION" | mysql -u root -p$PASS  
+echo "GRANT ALL PRIVILEGES ON *.* TO 'root'@'172%' IDENTIFIED BY \"$PASS\" WITH GRANT OPTION" | mysql -u root -p$PASS
 
 echo "... done"
 
