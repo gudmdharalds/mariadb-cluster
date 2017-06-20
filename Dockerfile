@@ -4,6 +4,10 @@
 
 FROM centos:7.1.1503
 
+# Needed to make things work
+RUN yum swap -y fakesystemd systemd && \
+    yum install -y systemd-devel
+
 # Update system
 # While tempting, do not remove this:
 # You need your systems to run up-to-date software.
